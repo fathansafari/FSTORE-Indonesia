@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    font-family: sans-serif;
+    background-color: #05161A;
+    color: white;
+    line-height: 1.6;
+}
+
+.header {
+    background-color: #0e0d0d;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+     position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: blue;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.cart-count {
+    background-color: #ff4757;
+    color: white;
+    padding: 0 6px;
+    border-radius: 60%;
+    font-size: 0.8rem;
+}
+
+.nav-links a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Hero Section */
+.hero {
+    background-color: #001f31;
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    color: white;
+}
+
+.hero p {
+    margin-top: 1rem;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.hero .sosmed {
+    margin-top: 1rem;
+    font-weight: bold;
+    font-size: 16px;
+    color:blue;
+}
+
+/* Konsistenkan semua tombol (hero, kategori, produk) */
+
+#btn .ig-admin {
+    font-weight: bold;
+    font-size: 1rem;
+}
+#btn,
+.category-list button {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.75rem 2rem;
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+#btn:hover,.category-list button:hover {
+    background-color: blue;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Categories */
+.categories {
+    text-align: center;
+    padding: 2rem;
+}
+
+.category-list button {
+    margin: 0.5rem;
+}
+
+/* Products */
+.products {
+    padding: 2rem;
+    text-align: center;
+}
+
+.product-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 2rem;
+}
+
+.product-card {
+    background-color: white;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.product-card img {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+  
+}
+
+.product-card h3 {
+    margin: 1rem 0 0.5rem;
+    color: black;
+}
+
+.product-card p {
+    color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #0e0d0d;
+    padding: 2rem;
+    text-align: center;
+    
+}
+
+.footer-content p {
+    color: #ccc;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
